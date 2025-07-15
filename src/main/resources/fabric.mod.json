@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "ok-boomer",
+  "version": "${version}",
+
+  "name": "Ok Boomer",
+  "description": "Because the cool kids look really close at explosions.\nA no-nonsense zoom mod with configurable in-game and in-screen zoom capabilities",
+  "authors": [
+    "glisco"
+  ],
+  "contact": {
+    "sources": "https://github.com/gliscowo/ok-boomer",
+    "issues": "https://github.com/gliscowo/ok-boomer/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/ok-boomer/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.wispforest.okboomer.OkBoomer"
+    ]
+  },
+
+  "mixins": [
+    "ok-boomer.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": ">=1.20.5",
+    "owo-lib": ">=0.11.3"
+  }
+}
